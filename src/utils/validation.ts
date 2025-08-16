@@ -35,7 +35,6 @@ export const applicationSchema = z.object({
     .transform(val => val.replace(/\D/g, '')),
   city: z.string().min(2, 'City is required'),
   state: z.string().min(2, 'Province is required'),
-  zipCode: z.string().regex(ZIP_CODE_REGEX, 'ZIP code must be exactly 5 digits'),
   zipCode: z.string()
     .transform(normalizePostalCode)
     .regex(POSTAL_CODE_REGEX, 'Postal code must be in K1A 0A6 format'),
