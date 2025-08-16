@@ -71,7 +71,7 @@ const ApplicationForm = () => {
     }
 
     if (!isValidZip(formData.zipCode)) {
-      toast.error('Please enter a valid ZIP code');
+      toast.error('Please enter a valid Canadian postal code (K1A 0A6)');
       return;
     }
 
@@ -249,6 +249,14 @@ const ApplicationForm = () => {
     } else if (name === 'state') {
       // Convert state to uppercase
       setFormData(prev => ({ ...prev, [name]: value.toUpperCase() }));
+    } else if (name === 'zipCode') {
+      // Format postal code as user types
+      const cleaned = value.replace(/\s/g, '').toUpperCase();
+      let formatted = cleaned;
+      if (cleaned.length > 3) {
+        formatted = cleaned.slice(0, 3) + ' ' + cleaned.slice(3, 6);
+      }
+      setFormData(prev => ({ ...prev, [name]: formatted }));
     } else if (name === 'accountNumber' || name === 'ssnLastFour') {
       // Remove all non-digit characters for account number and SSN
       const digitsOnly = value.replace(/\D/g, '');

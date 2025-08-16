@@ -3,14 +3,27 @@ import { z } from 'zod';
 // Phone number regex for Canadian format
 const PHONE_REGEX = /^\+?1?\s*\(?([0-9]{3})\)?[-.\s]?([0-9]{3})[-.\s]?([0-9]{4})$/;
 
-// ZIP code regex for 5-digit format (to match database constraint)
-const ZIP_CODE_REGEX = /^\d{5}$/;
+// Canadian postal code regex for K1A 0A6 format
+const POSTAL_CODE_REGEX = /^[A-Z]\d[A-Z]\s\d[A-Z]\d$/;
 
 // Account number regex (digits only)
 const ACCOUNT_REGEX = /^\d+$/;
 
 // SIN last 4 digits regex
 const SIN_LAST_FOUR_REGEX = /^\d{4}$/;
+
+// Normalize Canadian postal code to K1A 0A6 format
+const normalizePostalCode = (postalCode: string): string => {
+  // Remove all spaces and convert to uppercase
+  const cleaned = postalCode.replace(/\s/g, '').toUpperCase();
+  
+  // Add space after third character: K1A0A6 -> K1A 0A6
+  if (cleaned.length === 6) {
+    return cleaned.slice(0, 3) + ' ' + cleaned.slice(3);
+  }
+  
+  return postalCode;
+};
 
 // Validation schemas
 export const applicationSchema = z.object({
@@ -23,6 +36,9 @@ export const applicationSchema = z.object({
   city: z.string().min(2, 'City is required'),
   state: z.string().min(2, 'Province is required'),
   zipCode: z.string().regex(ZIP_CODE_REGEX, 'ZIP code must be exactly 5 digits'),
+  zipCode: z.string()
+    .transform(normalizePostalCode)
+    .regex(POSTAL_CODE_REGEX, 'Postal code must be in K1A 0A6 format'),
   bestTimeToCall: z.string().min(1, 'Best time to call is required'),
   loanAmount: z.string().min(1, 'Loan amount is required'),
   monthlyIncome: z.string().min(1, 'Monthly income is required'),
@@ -57,9 +73,10 @@ export const isValidPhone = (phone: string): boolean => {
   return PHONE_REGEX.test(phone);
 };
 
-// Validate ZIP code format
-export const isValidZip = (zipCode: string): boolean => {
-  return ZIP_CODE_REGEX.test(zipCode);
+// Validate Canadian postal code format
+export const isValidZip = (postalCode: string): boolean => {
+  const normalized = normalizePostalCode(postalCode);
+  return POSTAL_CODE_REGEX.test(normalized);
 };
 
 // Validate account number format
