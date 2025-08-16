@@ -136,10 +136,6 @@ const Home = () => {
               />
             </div>
           </div>
-                className="w-full"
-              />
-            </div>
-          </div>
         </div>
       </div>
 
