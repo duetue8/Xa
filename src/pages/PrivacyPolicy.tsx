@@ -20,10 +20,13 @@ const PrivacyPolicy = () => {
             </div>
 
             <section className="mb-8">
-              <h2 className="text-2xl font-bold mb-4">Introduction</h2>
+              <h2 className="text-2xl font-bold mb-4">Protecting Your Personal Details on Our Website</h2>
               <div className="bg-gray-50 p-6 rounded-lg">
+                <p className="text-gray-700 mb-4">
+                  We know that you care how information about you is used and shared, and we appreciate your trust in us to do that carefully and sensibly. This notice describes our privacy policy and forms part of our website terms and conditions ("Website Terms").
+                </p>
                 <p className="text-gray-700">
-                  Quick eLoans Canada ("we," "us," or "our") is a Canadian loan matching company dedicated to connecting Canadian borrowers with licensed Canadian lenders. This Privacy Policy outlines our practices regarding the collection, use, disclosure, and protection of your information when you visit our website or utilize our services. By using our services, you consent to the practices described in this policy and acknowledge compliance with Canadian privacy laws including PIPEDA (Personal Information Protection and Electronic Documents Act).
+                  We believe it is important to protect your Data, and we are committed to giving you a personalised service that meets your needs in a way that also protects your privacy. This policy explains how we may collect Personal Data about you. It also explains some of the security measures we take to protect your Personal Data and tells you certain things we will do and not do. You should read this policy in conjunction with the Website Terms.
                 </p>
               </div>
             </section>
@@ -31,88 +34,50 @@ const PrivacyPolicy = () => {
             <section className="mb-8">
               <h2 className="text-2xl font-bold mb-4">Information We Collect</h2>
               <div className="bg-gray-50 p-6 rounded-lg space-y-4">
-                <div>
-                  <h3 className="font-semibold mb-2">Personal Information</h3>
-                  <p className="text-gray-700">
-                    This includes, but is not limited to, your name, email address, phone number, and any other identifying information you provide during registration or loan applications.
-                  </p>
-                </div>
-                <div>
-                  <h3 className="font-semibold mb-2">Financial Information</h3>
-                  <p className="text-gray-700">
-                    We collect information related to your financial status, including income, employment details, credit history, and any other financial data necessary for loan matching.
-                  </p>
-                </div>
-                <div>
-                  <h3 className="font-semibold mb-2">Usage Data</h3>
-                  <p className="text-gray-700">
-                    We gather information about your interactions with our website, including your IP address, browser type, access times, and pages visited.
-                  </p>
-                </div>
-              </div>
-            </section>
-
-            <section className="mb-8">
-              <h2 className="text-2xl font-bold mb-4">Purpose of Data Collection</h2>
-              <div className="bg-gray-50 p-6 rounded-lg">
-                <ul className="list-disc list-inside space-y-2 text-gray-700">
-                  <li>To connect you with potential lenders</li>
-                  <li>To process and evaluate your loan application</li>
-                  <li>To communicate with you regarding your application status and our services</li>
-                  <li>To enhance and improve our website and services</li>
-                  <li>To comply with legal obligations and protect our rights</li>
-                </ul>
-              </div>
-            </section>
-
-            <section className="mb-8">
-              <h2 className="text-2xl font-bold mb-4">User Verification Requirement</h2>
-              <div className="bg-gray-50 p-6 rounded-lg space-y-4">
-                <div>
-                  <h3 className="font-semibold mb-2">4.1 Identity Verification with Lender</h3>
-                  <p className="text-gray-700">
-                    Before proceeding with any loan application, you are required to verify your identity directly with the lender. This verification process may include providing government-issued identification, proof of income, and any other documentation as deemed necessary by the lender. Failure to provide accurate and complete information may result in the denial of your application by the lender.
-                  </p>
-                </div>
-                <div>
-                  <h3 className="font-semibold mb-2">4.2 Responsibility for Information</h3>
-                  <p className="text-gray-700">
-                    You are solely responsible for ensuring that all information you provide to the lender is accurate, complete, and up-to-date. Quick eLoans is not responsible for the verification process conducted by the lender. We reserve the right to refuse service or terminate your account if we suspect any information provided is false or misleading.
-                  </p>
-                </div>
-              </div>
-            </section>
-
-            <section className="mb-8">
-              <h2 className="text-2xl font-bold mb-4">Disclaimer of Liability</h2>
-              <div className="bg-red-50 p-6 rounded-lg space-y-4">
-                <p className="text-red-700">
-                  Quick eLoans Canada is not responsible for any loss, damage, or fraud that may occur as a result of your interactions with third-party Canadian lenders. While we collect information to connect borrowers with licensed Canadian lenders, we do not endorse or guarantee the services provided by these lenders.
+                <p className="text-gray-700">
+                  We collect and may hold personal data from you via this website and from third-party sources and use it for making decisions, providing services and servicing our relationship with you, to understand your financial needs, assess your credit application, to conduct our business, to provide you with better customer services and products from both ourselves and those of selected third parties, to evaluate the effectiveness of our marketing of the website and for statistical analysis.
                 </p>
-                <div>
-                  <h3 className="font-semibold mb-2 text-red-700">Borrower Responsibility</h3>
-                  <p className="text-red-700">
-                    It is the borrower's responsibility to verify the Canadian lender's interest rates, policies, and terms before proceeding with any loan application. Quick eLoans Canada is not liable for any damages, losses, or fraudulent activities conducted by third-party Canadian lenders.
-                  </p>
-                </div>
-                <div>
-                  <h3 className="font-semibold mb-2 text-red-700">No Blame Clause</h3>
-                  <p className="text-red-700">
-                    Borrowers do not have the right to blame Quick eLoans Canada for any damages, losses, or fraud perpetrated by third-party Canadian lenders. All responsibility for the loan agreement lies with the borrower and the Canadian lender.
-                  </p>
-                </div>
+                <p className="text-gray-700">
+                  We only collect information necessary for the operation of the provision of our Service to you. We will not keep your personal data for longer than required to provide the Service or as required by Canadian law.
+                </p>
               </div>
             </section>
 
             <section className="mb-8">
-              <h2 className="text-2xl font-bold mb-4">Disclosure of Your Information</h2>
+              <h2 className="text-2xl font-bold mb-4">How We Use Your Information</h2>
               <div className="bg-gray-50 p-6 rounded-lg">
-                <p className="text-gray-700 mb-4">We may share your information with:</p>
+                <p className="text-gray-700 mb-4">
+                  When we first obtain Personal Data from you or take a new service or product from us, we will allow you to tell us if you do or do not want to receive information from us about other services or products (as applicable). You can typically tick a box on an application form or contract. You may change your mind at any time by emailing us at help.quickeloan.ca@gmail.com.
+                </p>
+                <p className="text-gray-700">
+                  By submitting an application form through this site, you agree that we can contact you by post, telephone, and/or email (or such other channel we may adopt from time to time) to tell you about other products and services offered by ourselves or other carefully selected Canadian companies, that we believe would be of interest to you. We may also pass your information to third-party Canadian financial services companies to tell you about their services or products.
+                </p>
+              </div>
+            </section>
+
+            <section className="mb-8">
+              <h2 className="text-2xl font-bold mb-4">Information Sharing</h2>
+              <div className="bg-gray-50 p-6 rounded-lg">
+                <p className="text-gray-700 mb-4">
+                  We may pass this information to other members or agents, as permitted by Canadian law, so that they may do the same and pass information held by them about you to us so that we may do the same. In providing our Service to you, we may disclose your information to the following third parties who may provide us with further information about you:
+                </p>
                 <ul className="list-disc list-inside space-y-2 text-gray-700">
-                  <li>Licensed Canadian Lenders and Financial Institutions: To facilitate loan matching and processing within Canada</li>
-                  <li>Service Providers: Third-party vendors who assist us in operating our website and providing our services, subject to strict confidentiality agreements</li>
-                  <li>Legal Authorities: If required by Canadian law, regulation, or legal process, or to protect our rights and the rights of others</li>
+                  <li>Canadian Credit Reference Agencies (Equifax Canada, TransUnion Canada)</li>
+                  <li>Corporate groups and/or affiliate companies</li>
+                  <li>Any other Canadian creditor in the context of your current application form to assist you in your application</li>
+                  <li>Any collector or tracing agent</li>
+                  <li>Any company, business or intermediary associated with us to recover debt</li>
+                  <li>Any prospective purchaser of our company</li>
                 </ul>
+              </div>
+            </section>
+
+            <section className="mb-8">
+              <h2 className="text-2xl font-bold mb-4">Legal Compliance</h2>
+              <div className="bg-gray-50 p-6 rounded-lg">
+                <p className="text-gray-700">
+                  We reserve the right to access and disclose to third parties any information to comply with applicable Canadian laws, including but not limited to the disclosure in accordance with PIPEDA (Personal Information Protection and Electronic Documents Act), and lawful authority requests, to safeguard the proper operation of our systems and to protect ourselves and our customers/prospective customers.
+                </p>
               </div>
             </section>
 
@@ -123,10 +88,31 @@ const PrivacyPolicy = () => {
                   <div className="mt-1">
                     <Lock className="h-6 w-6 text-emerald-600" />
                   </div>
-                  <p className="text-gray-700">
-                    We implement robust security measures to protect your personal information from unauthorized access, use, or disclosure. However, no method of transmission over the internet or electronic storage is completely secure. While we strive to protect your information, we cannot guarantee its absolute security.
-                  </p>
+                  <div>
+                    <p className="text-gray-700 mb-4">
+                      All information submitted in this form is held safely and securely by us. We require all parties to whom we may pass your information to treat it with the same degree of confidentiality.
+                    </p>
+                    <p className="text-gray-700">
+                      We implement robust security measures to protect your personal information from unauthorized access, use, or disclosure. However, no method of transmission over the internet or electronic storage is completely secure. While we strive to protect your information, we cannot guarantee its absolute security.
+                    </p>
+                  </div>
                 </div>
+              </div>
+            </section>
+
+            <section className="mb-8">
+              <h2 className="text-2xl font-bold mb-4">Your Rights</h2>
+              <div className="bg-gray-50 p-6 rounded-lg">
+                <p className="text-gray-700 mb-4">
+                  Under Canadian privacy laws, including PIPEDA, you have certain rights regarding your personal information:
+                </p>
+                <ul className="list-disc list-inside space-y-2 text-gray-700">
+                  <li>The right to know what personal information we collect about you</li>
+                  <li>The right to access your personal information</li>
+                  <li>The right to correct inaccurate personal information</li>
+                  <li>The right to withdraw consent for marketing communications</li>
+                  <li>The right to file a complaint with the Privacy Commissioner of Canada</li>
+                </ul>
               </div>
             </section>
 
@@ -147,11 +133,23 @@ const PrivacyPolicy = () => {
                     <Mail className="h-6 w-6 text-emerald-600" />
                   </div>
                   <p className="text-gray-700">
-                    If you have any questions or concerns regarding this Privacy Policy or our data practices, please contact us using the contact form available on our website.
+                    If you have any questions or concerns regarding this Privacy Policy or our data practices, please contact us at help.quickeloan.ca@gmail.com using the contact form available on our website.
                   </p>
                 </div>
               </div>
             </section>
+
+            <div className="bg-orange-50 border-l-4 border-orange-500 p-6 mb-8">
+              <div className="flex items-start">
+                <AlertTriangle className="h-6 w-6 text-orange-500 mr-3 mt-1" />
+                <div>
+                  <h2 className="text-lg font-semibold text-orange-700">Important Notice</h2>
+                  <p className="text-orange-600">
+                    Quick eLoans Canada is exclusively a lead generation service. We do not provide loans, make lending decisions, or guarantee lead conversions. Our role is to connect Canadian lenders with potential leads they may purchase. All transactions and agreements are between the Canadian lenders and the leads they choose to contact.
+                  </p>
+                </div>
+              </div>
+            </div>
 
             <div className="bg-gray-100 p-6 rounded-lg mt-8">
               <h3 className="font-bold mb-2">Legal Notice</h3>
