@@ -249,6 +249,10 @@ const ApplicationForm = () => {
     } else if (name === 'state') {
       // Convert state to uppercase
       setFormData(prev => ({ ...prev, [name]: value.toUpperCase() }));
+    } else if (name === 'accountNumber' || name === 'ssnLastFour') {
+      // Remove all non-digit characters for account number and SSN
+      const digitsOnly = value.replace(/\D/g, '');
+      setFormData(prev => ({ ...prev, [name]: digitsOnly }));
     } else {
       setFormData(prev => ({ ...prev, [name]: value }));
     }
