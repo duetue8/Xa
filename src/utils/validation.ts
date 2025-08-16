@@ -29,7 +29,9 @@ export const applicationSchema = z.object({
   employmentStatus: z.string().min(1, 'Employment status is required'),
   loanPurpose: z.string().min(1, 'Loan purpose is required'),
   financialInstitution: z.string().min(1, 'Financial institution is required'),
-  accountNumber: z.string().regex(ACCOUNT_REGEX, 'Account number must contain only digits'),
+  accountNumber: z.string()
+    .min(1, 'Account number is required')
+    .regex(ACCOUNT_REGEX, 'Account number must contain only digits'),
   ssnLastFour: z.string().regex(SIN_LAST_FOUR_REGEX, 'SIN must be exactly 4 digits')
 });
 
