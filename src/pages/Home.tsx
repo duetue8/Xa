@@ -110,6 +110,8 @@ const Home = () => {
                 <span className="text-emerald-600">Why Use Our Service?</span>
               </h2>
               <p className="text-xl text-gray-600 mb-8">
+                Connect with multiple Canadian lenders through one simple application process.
+              </p>
                     description: "Get connected with potential Canadian lenders"
               <ul className="space-y-6">
                 {[
