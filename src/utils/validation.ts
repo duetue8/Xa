@@ -70,4 +70,3 @@ export const isValidAccountNumber = (accountNumber: string): boolean => {
 // Validate SIN last 4 format
 export const isValidSsnLastFour = (sin: string): boolean => {
   return SIN_LAST_FOUR_REGEX.test(sin);
-};
