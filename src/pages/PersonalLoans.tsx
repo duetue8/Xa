@@ -103,3 +103,5 @@ const PersonalLoans = () => {
 };
 
 export default PersonalLoans;
+  )
+}
