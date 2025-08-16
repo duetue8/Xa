@@ -17,7 +17,7 @@ const PersonalLoans = () => {
                   <h2 className="text-lg font-semibold text-orange-700">Important Notice</h2>
                   <p className="text-orange-600">
                     Quickeloan is exclusively a lead generation service. We do not provide loans, make lending decisions, or guarantee lead conversions. Our role is to connect lenders with potential leads they may purchase. All transactions and agreements are between the lenders and the leads they choose to contact.
-                  <p className="text-xl">Borrow CAD $1,000 - $50,000</p>
+                  </p>
                 </div>
               </div>
             </div>

@@ -118,8 +118,7 @@ const Home = () => {
                   "Save time with one simple application",
                   "Access multiple loan options",
                   "Compare offers easily",
-                    description: "Review and choose your best Canadian loan option"
-                  "Review and Accept "
+                  "Review and choose your best Canadian loan option"
                 ].map((item, index) => (
                   <li key={index} className="flex items-center text-lg">
                     <CheckCircle className="h-8 w-8 text-emerald-600 mr-4" />
