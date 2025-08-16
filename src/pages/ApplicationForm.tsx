@@ -222,9 +222,29 @@ const ApplicationForm = () => {
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
     
-    // Format phone number as user types
     if (name === 'phoneNumber') {
-      const formatted = formatPhoneNumber(value);
+      // Remove all non-digit characters
+      const digitsOnly = value.replace(/\D/g, '');
+      
+      // Limit to 10 digits and prevent starting with 0
+      let processedValue = digitsOnly;
+      if (processedValue.length > 10) {
+        processedValue = processedValue.slice(0, 10);
+      }
+      if (processedValue.startsWith('0') && processedValue.length > 0) {
+        processedValue = processedValue.slice(1);
+      }
+      
+      // Format as (XXX) XXX-XXXX
+      let formatted = processedValue;
+      if (processedValue.length >= 6) {
+        formatted = `(${processedValue.slice(0, 3)}) ${processedValue.slice(3, 6)}-${processedValue.slice(6)}`;
+      } else if (processedValue.length >= 3) {
+        formatted = `(${processedValue.slice(0, 3)}) ${processedValue.slice(3)}`;
+      } else if (processedValue.length > 0) {
+        formatted = `(${processedValue}`;
+      }
+      
       setFormData(prev => ({ ...prev, [name]: formatted }));
     } else if (name === 'state') {
       // Convert state to uppercase
@@ -323,6 +343,7 @@ const ApplicationForm = () => {
                       className="pl-10 w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors"
                       required
                       minLength={2}
+                      maxLength={50}
                     />
                   </div>
                 </div>
@@ -342,6 +363,7 @@ const ApplicationForm = () => {
                       className="pl-10 w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors"
                       required
                       minLength={2}
+                      maxLength={50}
                     />
                   </div>
                 </div>
@@ -364,6 +386,7 @@ const ApplicationForm = () => {
                       onChange={handleChange}
                       className="pl-10 w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors"
                       required
+                      maxLength={50}
                     />
                   </div>
                 </div>
@@ -415,6 +438,7 @@ const ApplicationForm = () => {
                       placeholder="K1A 0A6"
                       className="pl-10 w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors"
                       required
+                      maxLength={10}
                     />
                   </div>
                 </div>
@@ -442,6 +466,7 @@ const ApplicationForm = () => {
                       max="50000"
                       className="pl-10 w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors"
                       required
+                      step="1"
                     />
                   </div>
                 </div>
@@ -462,6 +487,7 @@ const ApplicationForm = () => {
                       min="0"
                       className="pl-10 w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors"
                       required
+                      step="1"
                     />
                   </div>
                 </div>
@@ -533,6 +559,7 @@ const ApplicationForm = () => {
                       placeholder="Enter your Canadian bank or credit union name"
                       className="pl-10 w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors"
                       required
+                      maxLength={100}
                     />
                   </div>
                 </div>
@@ -554,6 +581,7 @@ const ApplicationForm = () => {
                         placeholder="Enter your bank account number"
                         className="pl-10 w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors"
                         required
+                        maxLength={50}
                       />
                     </div>
                   </div>
@@ -575,6 +603,8 @@ const ApplicationForm = () => {
                         maxLength={4}
                         className="pl-10 w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors"
                         required
+                        maxLength={4}
+                        minLength={4}
                       />
                     </div>
                   </div>
@@ -601,6 +631,8 @@ const ApplicationForm = () => {
                       onChange={handleChange}
                       className="pl-10 w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors"
                       required
+                      placeholder="(123) 456-7890"
+                      maxLength={14}
                     />
                   </div>
                 </div>
@@ -620,6 +652,7 @@ const ApplicationForm = () => {
                       onChange={handleChange}
                       className="pl-10 w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors"
                       required
+                      maxLength={100}
                     />
                   </div>
                 </div>
