@@ -105,14 +105,14 @@ const Home = () => {
       {/* Benefits Section */}
       <div className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4">
-                    description: "Fill out one simple online form for Canadian lenders"
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div>
               <h2 className="text-4xl font-bold mb-8">
                 <span className="text-emerald-600">Why Use Our Service?</span>
               </h2>
               <p className="text-xl text-gray-600 mb-8">
                 Connect with multiple Canadian lenders through one simple application process.
               </p>
-                    description: "Get connected with potential Canadian lenders"
               <ul className="space-y-6">
                 {[
                   "Save time with one simple application",
@@ -132,6 +132,10 @@ const Home = () => {
               <img
                 src="https://i.ibb.co/xtdLVsD3/communication-1297544.png"
                 alt="Loan application process"
+                className="w-full"
+              />
+            </div>
+          </div>
                 className="w-full"
               />
             </div>
