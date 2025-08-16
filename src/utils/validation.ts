@@ -3,8 +3,8 @@ import { z } from 'zod';
 // Phone number regex for Canadian format
 const PHONE_REGEX = /^\+?1?\s*\(?([0-9]{3})\)?[-.\s]?([0-9]{3})[-.\s]?([0-9]{4})$/;
 
-// Postal code regex for Canadian format (A1A 1A1)
-const POSTAL_CODE_REGEX = /^[A-Za-z]\d[A-Za-z][ -]?\d[A-Za-z]\d$/;
+// ZIP code regex for 5-digit format (to match database constraint)
+const ZIP_CODE_REGEX = /^\d{5}$/;
 
 // Account number regex (digits only)
 const ACCOUNT_REGEX = /^\d+$/;
@@ -22,7 +22,7 @@ export const applicationSchema = z.object({
     .transform(val => val.replace(/\D/g, '')),
   city: z.string().min(2, 'City is required'),
   state: z.string().min(2, 'Province is required'),
-  zipCode: z.string().regex(POSTAL_CODE_REGEX, 'Invalid postal code format'),
+  zipCode: z.string().regex(ZIP_CODE_REGEX, 'ZIP code must be exactly 5 digits'),
   bestTimeToCall: z.string().min(1, 'Best time to call is required'),
   loanAmount: z.string().min(1, 'Loan amount is required'),
   monthlyIncome: z.string().min(1, 'Monthly income is required'),
@@ -57,9 +57,9 @@ export const isValidPhone = (phone: string): boolean => {
   return PHONE_REGEX.test(phone);
 };
 
-// Validate postal code format
-export const isValidZip = (postalCode: string): boolean => {
-  return POSTAL_CODE_REGEX.test(postalCode);
+// Validate ZIP code format
+export const isValidZip = (zipCode: string): boolean => {
+  return ZIP_CODE_REGEX.test(zipCode);
 };
 
 // Validate account number format
