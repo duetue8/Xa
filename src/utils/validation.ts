@@ -37,7 +37,9 @@ export const applicationSchema = z.object({
   state: z.string().min(2, 'Province is required'),
   zipCode: z.string()
     .transform(normalizePostalCode)
-    .regex(POSTAL_CODE_REGEX, 'Postal code must be in K1A 0A6 format'),
+    .refine(val => POSTAL_CODE_REGEX.test(val), {
+      message: 'Postal code must be in K1A 0A6 format'
+    }),
   bestTimeToCall: z.string().min(1, 'Best time to call is required'),
   loanAmount: z.string().min(1, 'Loan amount is required'),
   monthlyIncome: z.string().min(1, 'Monthly income is required'),
