@@ -105,13 +105,11 @@ const Home = () => {
       {/* Benefits Section */}
       <div className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                     description: "Fill out one simple online form for Canadian lenders"
               <h2 className="text-4xl font-bold mb-8">
                 <span className="text-emerald-600">Why Use Our Service?</span>
               </h2>
               <p className="text-xl text-gray-600 mb-8">
-                As a specialized lead generation service, we help you:
                     description: "Get connected with potential Canadian lenders"
               <ul className="space-y-6">
                 {[
