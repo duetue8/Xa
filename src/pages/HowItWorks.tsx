@@ -17,7 +17,7 @@ const HowItWorks = () => {
             <div className="absolute inset-0 bg-gradient-to-r from-emerald-600/90 to-teal-600/90">
               <div className="h-full flex flex-col items-center justify-center text-white p-8">
                 <h1 className="text-4xl md:text-5xl font-bold text-center mb-4">How Our Service Works</h1>
-                <p className="text-xl text-center text-emerald-50">Simple Steps to Connect with Lenders</p>
+                <p className="text-xl text-center text-emerald-50">Simple Steps to Connect with Canadian Lenders</p>
               </div>
             </div>
           </div>
@@ -33,7 +33,7 @@ const HowItWorks = () => {
                     </div>
                     <div className="absolute top-8 right-4 md:right-0 text-5xl font-bold text-emerald-100">1</div>
                     <h3 className="text-xl font-semibold mb-3">Complete Application</h3>
-                    <p className="text-gray-600">Fill out our simple online form with your basic information and loan requirements</p>
+                    <p className="text-gray-600">Fill out our simple online form with your basic Canadian information and loan requirements in CAD</p>
                   </div>
                 </div>
 
@@ -44,7 +44,7 @@ const HowItWorks = () => {
                     </div>
                     <div className="absolute top-8 right-4 md:right-0 text-5xl font-bold text-emerald-100">2</div>
                     <h3 className="text-xl font-semibold mb-3">Get Connected</h3>
-                    <p className="text-gray-600">We share your application data with third-party lenders, who may contact you directly.</p>
+                    <p className="text-gray-600">We share your application data with licensed Canadian third-party lenders, who may contact you directly.</p>
                   </div>
                 </div>
 
@@ -55,7 +55,7 @@ const HowItWorks = () => {
                     </div>
                     <div className="absolute top-8 right-4 md:right-0 text-5xl font-bold text-emerald-100">3</div>
                     <h3 className="text-xl font-semibold mb-3">Review Offers</h3>
-                    <p className="text-gray-600">Compare loan offers from multiple lenders and choose the best option</p>
+                    <p className="text-gray-600">Compare loan offers from multiple Canadian lenders and choose the best option that complies with Canadian regulations</p>
                   </div>
                 </div>
               </div>
@@ -71,7 +71,7 @@ const HowItWorks = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold mb-2">Get Connected with Interested Lenders</h3>
-                    <p className="text-gray-600">Access various lenders through a single application, increasing your chances of finding the right loan.</p>
+                    <p className="text-gray-600">Access various licensed Canadian lenders through a single application, increasing your chances of finding the right loan that meets Canadian standards.</p>
                   </div>
                 </div>
 
@@ -101,9 +101,9 @@ const HowItWorks = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold mb-2">Free Service</h3>
-                    <p className="text-gray-600">We are a lead generation service. When you submit your information, we collect your details and sell them to third-party lenders who may contact you directly with loan offers.
+                    <p className="text-gray-600">We are a Canadian lead generation service. When you submit your information as a Canadian resident, we collect your details and sell them to licensed Canadian third-party lenders who may contact you directly with loan offers.
 
-Our service is completely free to use — there are no hidden fees or charges for submitting your application..</p>
+Our service is completely free to use for Canadian residents — there are no hidden fees or charges for submitting your application.</p>
                   </div>
                 </div>
               </div>

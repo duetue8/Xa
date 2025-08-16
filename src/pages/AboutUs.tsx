@@ -28,10 +28,10 @@ const AboutUs = () => {
               <div className="mb-12">
                 <h2 className="text-3xl font-bold mb-6">Who We Are</h2>
                 <p className="text-lg text-gray-600 mb-6">
-                  Welcome to Quickeloans, a trusted lead generation service designed to bridge the gap between lenders and potential borrowers. Established with a focus on innovation, we utilize our advanced website platform to generate high-quality personal loan leads. These leads are carefully curated and offered to third-party lenders who are seeking to expand their customer base. Operating primarily through email, we provide a seamless channel for lenders to purchase and connect with these leads. Our mission is to simplify the lead acquisition process, making it faster, more efficient, and highly targeted for lenders looking to grow their personal loan portfolios.
+                  Welcome to Quickeloans, a trusted Canadian lead generation service designed to bridge the gap between Canadian lenders and potential borrowers across Canada. Established with a focus on innovation, we utilize our advanced website platform to generate high-quality personal loan leads from Canadian residents. These leads are carefully curated and offered to licensed Canadian third-party lenders who are seeking to expand their customer base. Operating primarily through email, we provide a seamless channel for Canadian lenders to purchase and connect with these leads. Our mission is to simplify the lead acquisition process, making it faster, more efficient, and highly targeted for Canadian lenders looking to grow their personal loan portfolios.
                 </p>
                 <p className="text-lg text-gray-600">
-                  Our mission is to make the loan discovery process easier, faster, and more efficient for borrowers seeking financial solutions.
+                  Our mission is to make the loan discovery process easier, faster, and more efficient for Canadian borrowers seeking financial solutions that comply with Canadian regulations.
                 </p>
               </div>
 

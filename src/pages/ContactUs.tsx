@@ -9,7 +9,7 @@ const ContactUs = () => {
           {/* Hero Section */}
           <div className="bg-gradient-to-r from-emerald-600 to-teal-500 p-8 text-white text-center">
             <h1 className="text-4xl font-bold mb-4">Contact Us</h1>
-            <p className="text-xl text-emerald-50">We're here to help with your questions</p>
+            <p className="text-xl text-emerald-50">We're here to help Canadian borrowers with your questions</p>
           </div>
 
           {/* Important Notice */}
@@ -29,7 +29,7 @@ const ContactUs = () => {
                 <Mail className="h-8 w-8 text-emerald-600" />
               </div>
               <h2 className="text-2xl font-semibold mb-2">Email Support</h2>
-              <p className="text-gray-600 text-lg">help.quickeloan@gmail.com</p>
+              <p className="text-gray-600 text-lg">help.quickeloan.ca@gmail.com</p>
             </div>
           </div>
         </div>
@@ -41,7 +41,7 @@ const ContactUs = () => {
                 <Mail className="h-8 w-8 text-emerald-600" />
               </div>
               <h2 className="text-2xl font-semibold mb-2">Purchase Leads</h2>
-              <p className="text-gray-600 text-lg">sales.quickeloan@gmail.com</p>
+              <p className="text-gray-600 text-lg">sales.quickeloan.ca@gmail.com</p>
             </div>
           </div>
         </div>

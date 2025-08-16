@@ -8,35 +8,35 @@ const FAQ = () => {
   const faqs = [
     {
       question: "What is Quick eLoans?",
-      answer: "Quick eLoans is is a lead generation service that collects and sells personal loan lead information to third-party lenders who buy from us if they require leads to expand their business. We do not provide loans directly but facilitate connections through our website."
+      answer: "Quick eLoans Canada is a Canadian lead generation service that collects and sells personal loan lead information to licensed Canadian third-party lenders who buy from us if they require leads to expand their business in Canada. We do not provide loans directly but facilitate connections through our website for Canadian residents only."
     },
     {
       question: "How does the loan matching process work?",
-      answer: "We generate leads through our website and offer them to third-party lenders who contact us via email to purchase leads based on their business needs. Matching is tailored to lender criteria."
+      answer: "We generate leads from Canadian residents through our website and offer them to licensed Canadian third-party lenders who contact us via email to purchase leads based on their business needs. Matching is tailored to Canadian lender criteria and regulatory requirements."
     },
     {
       question: "Is there a fee to use Quick eLoans?",
-      answer: "Fees for purchasing leads are determined by our agreements with lenders. Please contact us directly via email for pricing and availability details."
+      answer: "Fees for purchasing leads are determined by our agreements with Canadian lenders. Please contact us directly via email for pricing and availability details for Canadian market leads."
     },
     {
       question: "How quickly can I get matched with lenders?",
-      answer: "Lead information is typically provided via email shortly after purchase confirmation, often within few minutes, depending on volume."
+      answer: "Lead information is typically provided to Canadian lenders via email shortly after purchase confirmation, often within few minutes, depending on volume and Canadian market demand."
     },
     {
       question: "What information do I need to provide?",
-      answer: "We share basic personal information, employment details, income information, and desired loan amounts, other information collected securely from our website.."
+      answer: "We collect and share basic personal information from Canadian residents, employment details, income information in CAD, desired loan amounts, provincial information, and other data collected securely from our website in compliance with Canadian privacy laws."
     },
     {
       question: "Is my information secure?",
-      answer: "Yes, we use advanced encryption and security measures to protect all lead information during transmission to lenders."
+      answer: "Yes, we use advanced encryption and security measures to protect all Canadian lead information during transmission to licensed Canadian lenders, in compliance with PIPEDA and other Canadian privacy regulations."
     },
     {
       question: "Do you guarantee loan approval?",
-      answer: "No, as a lead generation service, we cannot guarantee that leads will result in loan approvals or conversions. Success depends on the lenders' follow-up process."
+      answer: "No, as a Canadian lead generation service, we cannot guarantee that leads will result in loan approvals or conversions. Success depends on the Canadian lenders' follow-up process and their individual lending criteria."
     },
     {
       question: "What happens after I'm matched with a lender?",
-      answer: "Lenders receive the lead details via email and can contact the potential borrower directly to discuss loan options and proceed with their own lending process."
+      answer: "Licensed Canadian lenders receive the lead details via email and can contact the potential Canadian borrower directly to discuss loan options and proceed with their own lending process in compliance with Canadian regulations."
     }
   ];
 

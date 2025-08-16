@@ -13,7 +13,7 @@ const TermsAndConditions = () => {
               <div className="flex">
                 <AlertTriangle className="h-6 w-6 text-red-500 mr-3" />
                 <p className="text-red-700 font-semibold">
-                  CRITICAL NOTICE: Quick eLoans is STRICTLY a loan matching service. We DO NOT provide loans, make lending decisions, or guarantee approvals. By using our service, you accept these terms in full.
+                  CRITICAL NOTICE: Quick eLoans Canada is STRICTLY a Canadian loan matching service. We DO NOT provide loans, make lending decisions, or guarantee approvals. We only connect Canadian residents with licensed Canadian lenders. By using our service, you accept these terms in full under Canadian law.
                 </p>
               </div>
             </div>
@@ -22,7 +22,7 @@ const TermsAndConditions = () => {
               <h2 className="text-2xl font-bold mb-4">1. Acceptance of Terms</h2>
               <div className="bg-gray-50 p-6 rounded-lg">
                 <p className="text-gray-700">
-                  By using the Quick eLoans website and services, you agree to these Terms and Conditions. If you do not agree, please do not use our services.
+                  By using the Quick eLoans Canada website and services, you agree to these Terms and Conditions under Canadian law. If you do not agree, please do not use our services. These terms are governed by Canadian federal and provincial laws.
                 </p>
               </div>
             </section>
@@ -31,7 +31,7 @@ const TermsAndConditions = () => {
               <h2 className="text-2xl font-bold mb-4">2. Services Provided</h2>
               <div className="bg-gray-50 p-6 rounded-lg">
                 <p className="text-gray-700">
-                  Quick eLoans acts as a mediator to connect borrowers with lenders. We do not provide loans directly and are not responsible for any agreements made between borrowers and lenders.
+                  Quick eLoans Canada acts as a mediator to connect Canadian borrowers with licensed Canadian lenders. We do not provide loans directly and are not responsible for any agreements made between borrowers and Canadian lenders. All lending activities must comply with Canadian financial regulations.
                 </p>
               </div>
             </section>
@@ -40,7 +40,7 @@ const TermsAndConditions = () => {
               <h2 className="text-2xl font-bold mb-4">3. No Liability</h2>
               <div className="bg-gray-50 p-6 rounded-lg">
                 <p className="text-gray-700">
-                  Quick eLoans is not responsible for any loss, damage, or claims arising from your use of our services or any agreements made with lenders. You acknowledge that you use our services at your own risk.
+                  Quick eLoans Canada is not responsible for any loss, damage, or claims arising from your use of our services or any agreements made with Canadian lenders. You acknowledge that you use our services at your own risk under Canadian law.
                 </p>
               </div>
             </section>
@@ -58,14 +58,15 @@ const TermsAndConditions = () => {
               <h2 className="text-2xl font-bold mb-4">Service Definition</h2>
               <div className="bg-gray-50 p-6 rounded-lg">
                 <p className="text-gray-700 mb-4">
-                  Quick eLoans:
+                  Quick eLoans Canada:
                 </p>
                 <ul className="list-disc list-inside space-y-2 text-gray-700 font-semibold">
-                  <li>Is ONLY a matching service connecting borrowers to third-party lenders</li>
+                  <li>Is ONLY a matching service connecting Canadian borrowers to licensed Canadian third-party lenders</li>
                   <li>Does NOT provide loans directly</li>
                   <li>Has NO control over lending decisions</li>
                   <li>Makes NO guarantees about loan approval</li>
-                  <li>Is NOT responsible for lender terms or practices</li>
+                  <li>Is NOT responsible for Canadian lender terms or practices</li>
+                  <li>Operates in compliance with Canadian financial regulations</li>
                 </ul>
               </div>
             </section>
@@ -78,10 +79,11 @@ const TermsAndConditions = () => {
                 </p>
                 <ul className="list-disc list-inside space-y-2 text-gray-700">
                   <li>You are responsible for verifying lender legitimacy</li>
-                  <li>Quick eLoans is not liable for any financial losses</li>
-                  <li>Your information will be shared with multiple lenders</li>
-                  <li>Lenders may contact you directly</li>
+                  <li>Quick eLoans Canada is not liable for any financial losses</li>
+                  <li>Your information will be shared with multiple licensed Canadian lenders</li>
+                  <li>Canadian lenders may contact you directly</li>
                   <li>You must verify all loan terms independently</li>
+                  <li>You confirm you are a Canadian resident</li>
                 </ul>
               </div>
             </section>
@@ -90,14 +92,14 @@ const TermsAndConditions = () => {
               <h2 className="text-2xl font-bold mb-4">Liability Waiver</h2>
               <div className="bg-red-50 p-6 rounded-lg">
                 <p className="text-red-700 font-semibold mb-4">
-                  Quick eLoans SHALL NOT be held liable for:
+                  Quick eLoans Canada SHALL NOT be held liable for:
                 </p>
                 <ul className="list-disc list-inside space-y-2 text-red-700">
                   <li>Any financial losses or damages</li>
                   <li>Fraudulent activities by third parties</li>
-                  <li>Lender practices or decisions</li>
+                  <li>Canadian lender practices or decisions</li>
                   <li>Loan terms or agreements</li>
-                  <li>Data breaches by third-party lenders</li>
+                  <li>Data breaches by third-party Canadian lenders</li>
                 </ul>
               </div>
             </section>
@@ -106,11 +108,11 @@ const TermsAndConditions = () => {
               <h2 className="text-2xl font-bold mb-4">Indemnification</h2>
               <div className="bg-gray-50 p-6 rounded-lg">
                 <p className="text-gray-700">
-                  You agree to indemnify and hold Quick eLoans harmless from any claims, losses, damages, liabilities, costs, or expenses arising from:
+                  You agree to indemnify and hold Quick eLoans Canada harmless from any claims, losses, damages, liabilities, costs, or expenses arising from:
                 </p>
                 <ul className="list-disc list-inside mt-4 space-y-2 text-gray-700">
                   <li>Your use of our service</li>
-                  <li>Interactions with lenders</li>
+                  <li>Interactions with Canadian lenders</li>
                   <li>Loan agreements or terms</li>
                   <li>Violations of these terms</li>
                 </ul>
@@ -120,10 +122,10 @@ const TermsAndConditions = () => {
             <div className="bg-gray-100 p-6 rounded-lg">
               <h3 className="text-xl font-bold mb-4 text-red-600">Legal Disclaimer</h3>
               <p className="text-gray-700">
-                These terms constitute a legally binding agreement. By using Quick eLoans' services, you waive all rights to legal action against Quick eLoans for any damages, losses, or disputes arising from:
+                These terms constitute a legally binding agreement under Canadian law. By using Quick eLoans Canada's services, you waive all rights to legal action against Quick eLoans Canada for any damages, losses, or disputes arising from:
               </p>
               <ul className="list-disc list-inside mt-4 space-y-2 text-gray-700">
-                <li>Lender interactions or decisions</li>
+                <li>Canadian lender interactions or decisions</li>
                 <li>Financial losses or damages</li>
                 <li>Fraudulent activities</li>
                 <li>Data breaches or misuse</li>

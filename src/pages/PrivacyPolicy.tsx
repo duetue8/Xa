@@ -23,7 +23,7 @@ const PrivacyPolicy = () => {
               <h2 className="text-2xl font-bold mb-4">Introduction</h2>
               <div className="bg-gray-50 p-6 rounded-lg">
                 <p className="text-gray-700">
-                  Quick eLoans ("we," "us," or "our") is a loan matching company dedicated to connecting borrowers with lenders. This Privacy Policy outlines our practices regarding the collection, use, disclosure, and protection of your information when you visit our website or utilize our services. By using our services, you consent to the practices described in this policy.
+                  Quick eLoans Canada ("we," "us," or "our") is a Canadian loan matching company dedicated to connecting Canadian borrowers with licensed Canadian lenders. This Privacy Policy outlines our practices regarding the collection, use, disclosure, and protection of your information when you visit our website or utilize our services. By using our services, you consent to the practices described in this policy and acknowledge compliance with Canadian privacy laws including PIPEDA (Personal Information Protection and Electronic Documents Act).
                 </p>
               </div>
             </section>
@@ -87,18 +87,18 @@ const PrivacyPolicy = () => {
               <h2 className="text-2xl font-bold mb-4">Disclaimer of Liability</h2>
               <div className="bg-red-50 p-6 rounded-lg space-y-4">
                 <p className="text-red-700">
-                  Quick eLoans is not responsible for any loss, damage, or fraud that may occur as a result of your interactions with third-party lenders. While we collect information to connect borrowers with lenders, we do not endorse or guarantee the services provided by these lenders.
+                  Quick eLoans Canada is not responsible for any loss, damage, or fraud that may occur as a result of your interactions with third-party Canadian lenders. While we collect information to connect borrowers with licensed Canadian lenders, we do not endorse or guarantee the services provided by these lenders.
                 </p>
                 <div>
                   <h3 className="font-semibold mb-2 text-red-700">Borrower Responsibility</h3>
                   <p className="text-red-700">
-                    It is the borrower's responsibility to verify the lender's interest rates, policies, and terms before proceeding with any loan application. Quick eLoans is not liable for any damages, losses, or fraudulent activities conducted by third-party lenders.
+                    It is the borrower's responsibility to verify the Canadian lender's interest rates, policies, and terms before proceeding with any loan application. Quick eLoans Canada is not liable for any damages, losses, or fraudulent activities conducted by third-party Canadian lenders.
                   </p>
                 </div>
                 <div>
                   <h3 className="font-semibold mb-2 text-red-700">No Blame Clause</h3>
                   <p className="text-red-700">
-                    Borrowers do not have the right to blame Quick eLoans for any damages, losses, or fraud perpetrated by third-party lenders. All responsibility for the loan agreement lies with the borrower and the lender.
+                    Borrowers do not have the right to blame Quick eLoans Canada for any damages, losses, or fraud perpetrated by third-party Canadian lenders. All responsibility for the loan agreement lies with the borrower and the Canadian lender.
                   </p>
                 </div>
               </div>
@@ -109,9 +109,9 @@ const PrivacyPolicy = () => {
               <div className="bg-gray-50 p-6 rounded-lg">
                 <p className="text-gray-700 mb-4">We may share your information with:</p>
                 <ul className="list-disc list-inside space-y-2 text-gray-700">
-                  <li>Lenders and Financial Institutions: To facilitate loan matching and processing</li>
+                  <li>Licensed Canadian Lenders and Financial Institutions: To facilitate loan matching and processing within Canada</li>
                   <li>Service Providers: Third-party vendors who assist us in operating our website and providing our services, subject to strict confidentiality agreements</li>
-                  <li>Legal Authorities: If required by law, regulation, or legal process, or to protect our rights and the rights of others</li>
+                  <li>Legal Authorities: If required by Canadian law, regulation, or legal process, or to protect our rights and the rights of others</li>
                 </ul>
               </div>
             </section>
@@ -156,7 +156,7 @@ const PrivacyPolicy = () => {
             <div className="bg-gray-100 p-6 rounded-lg mt-8">
               <h3 className="font-bold mb-2">Legal Notice</h3>
               <p className="text-sm text-gray-600">
-                By using Quick eLoans' services, you acknowledge that you have read and understood this Privacy Policy and agree to be bound by its terms and conditions. If you do not agree with any part of this policy, please do not use our services.
+                By using Quick eLoans Canada's services, you acknowledge that you have read and understood this Privacy Policy and agree to be bound by its terms and conditions under Canadian law. If you do not agree with any part of this policy, please do not use our services.
               </p>
             </div>
           </div>

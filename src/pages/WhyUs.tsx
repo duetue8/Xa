@@ -17,7 +17,7 @@ const WhyUs = () => {
             <div className="absolute inset-0 bg-gradient-to-r from-emerald-600/90 to-teal-600/90">
               <div className="h-full flex flex-col items-center justify-center text-white p-8">
                 <h1 className="text-4xl md:text-5xl font-bold text-center mb-4">Why Choose Quick eLoans</h1>
-                <p className="text-xl text-center text-emerald-50">Your Trusted Loan Matching Service</p>
+                <p className="text-xl text-center text-emerald-50">Your Trusted Canadian Loan Matching Service</p>
               </div>
             </div>
           </div>
@@ -31,7 +31,7 @@ const WhyUs = () => {
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Lead Generation Service</h3>
                 <p className="text-gray-600">
-                  We collect your loan inquiry details and sell them to interested third-party lenders.
+                  We collect your Canadian loan inquiry details and sell them to interested licensed Canadian third-party lenders.
                 </p>
               </div>
 
@@ -41,7 +41,7 @@ const WhyUs = () => {
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Secure Data Handling</h3>
                 <p className="text-gray-600">
-                  Your information is encrypted and protected to ensure your privacy during the lead generation process.
+                  Your Canadian information is encrypted and protected to ensure your privacy during the lead generation process, in compliance with PIPEDA.
                 </p>
               </div>
 
@@ -51,7 +51,7 @@ const WhyUs = () => {
                 </div>
                 <h3 className="text-xl font-semibold mb-2">Fast Lead Delivery</h3>
                 <p className="text-gray-600">
-                  We quickly share your lead with potential lenders, but only when you request it. Lenders may then contact you directly with loan offers.
+                  We quickly share your Canadian lead with potential licensed Canadian lenders, but only when you request it. Canadian lenders may then contact you directly with loan offers.
                 </p>
               </div>
             </div>
@@ -66,7 +66,7 @@ const WhyUs = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold mb-2">Transparent Lead Sharing</h3>
-                    <p className="text-gray-600">We share your loan request with third-party lenders who may contact you with offers.</p>
+                    <p className="text-gray-600">We share your Canadian loan request with licensed Canadian third-party lenders who may contact you with offers.</p>
                   </div>
                 </div>
 
@@ -86,7 +86,7 @@ const WhyUs = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold mb-2">Data Protection</h3>
-                    <p className="text-gray-600">Your personal information is securely encrypted and only shared with lenders who buy our leads.</p>
+                    <p className="text-gray-600">Your personal Canadian information is securely encrypted and only shared with licensed Canadian lenders who buy our leads, in compliance with Canadian privacy laws.</p>
                   </div>
                 </div>
 
@@ -96,7 +96,7 @@ const WhyUs = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold mb-2">Support Team</h3>
-                    <p className="text-gray-600">We provides fast and reliable assistance throughout the lead submission process.</p>
+                    <p className="text-gray-600">We provide fast and reliable assistance throughout the Canadian lead submission process.</p>
                   </div>
                 </div>
               </div>

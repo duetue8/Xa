@@ -19,7 +19,7 @@ const InstallmentLoans = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-purple-600/80 to-indigo-600/80 flex items-center justify-center">
                 <div className="text-white text-center p-8">
                   <h2 className="text-3xl font-bold mb-4">Flexible Payment Plans</h2>
-                  <p className="text-xl">Borrow $1,000 - $10,000</p>
+                  <p className="text-xl">Borrow CAD $1,000 - $50,000</p>
                 </div>
               </div>
             </div>

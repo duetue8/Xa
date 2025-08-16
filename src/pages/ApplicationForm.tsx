@@ -369,27 +369,39 @@ const ApplicationForm = () => {
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">
-                    State
+                    Province
                   </label>
                   <div className="relative">
                     <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
                       <MapPin className="h-5 w-5 text-gray-400" />
                     </div>
-                    <input
-                      type="text"
+                    <select
                       name="state"
                       value={formData.state}
                       onChange={handleChange}
-                      maxLength={2}
-                      placeholder="CA"
-                      className="pl-10 w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors uppercase"
+                      className="pl-10 w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors appearance-none"
                       required
-                    />
+                    >
+                      <option value="">Select Province</option>
+                      <option value="AB">Alberta</option>
+                      <option value="BC">British Columbia</option>
+                      <option value="MB">Manitoba</option>
+                      <option value="NB">New Brunswick</option>
+                      <option value="NL">Newfoundland and Labrador</option>
+                      <option value="NS">Nova Scotia</option>
+                      <option value="ON">Ontario</option>
+                      <option value="PE">Prince Edward Island</option>
+                      <option value="QC">Quebec</option>
+                      <option value="SK">Saskatchewan</option>
+                      <option value="NT">Northwest Territories</option>
+                      <option value="NU">Nunavut</option>
+                      <option value="YT">Yukon</option>
+                    </select>
                   </div>
                 </div>
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">
-                    ZIP Code
+                    Postal Code
                   </label>
                   <div className="relative">
                     <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
@@ -400,7 +412,7 @@ const ApplicationForm = () => {
                       name="zipCode"
                       value={formData.zipCode}
                       onChange={handleChange}
-                      placeholder="12345"
+                      placeholder="K1A 0A6"
                       className="pl-10 w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors"
                       required
                     />
@@ -415,7 +427,7 @@ const ApplicationForm = () => {
               <div className="space-y-6">
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Desired Loan Amount ($)
+                    Desired Loan Amount (CAD $)
                   </label>
                   <div className="relative">
                     <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
@@ -427,7 +439,7 @@ const ApplicationForm = () => {
                       value={formData.loanAmount}
                       onChange={handleChange}
                       min="100"
-                      max="10000"
+                      max="50000"
                       className="pl-10 w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors"
                       required
                     />
@@ -436,7 +448,7 @@ const ApplicationForm = () => {
 
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Monthly Income ($)
+                    Monthly Income (CAD $)
                   </label>
                   <div className="relative">
                     <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
@@ -507,7 +519,7 @@ const ApplicationForm = () => {
 
                 <div>
                   <label className="block text-sm font-medium text-gray-700 mb-2">
-                    Financial Institution
+                    Canadian Financial Institution
                   </label>
                   <div className="relative">
                     <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
@@ -518,7 +530,7 @@ const ApplicationForm = () => {
                       name="financialInstitution"
                       value={formData.financialInstitution}
                       onChange={handleChange}
-                      placeholder="Enter your bank or credit union name"
+                      placeholder="Enter your Canadian bank or credit union name"
                       className="pl-10 w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors"
                       required
                     />
@@ -548,7 +560,7 @@ const ApplicationForm = () => {
 
                   <div>
                     <label className="block text-sm font-medium text-gray-700 mb-2">
-                      Last 4 Digits of SSN
+                      Last 4 Digits of SIN
                     </label>
                     <div className="relative">
                       <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
@@ -559,7 +571,7 @@ const ApplicationForm = () => {
                         name="ssnLastFour"
                         value={formData.ssnLastFour}
                         onChange={handleChange}
-                        placeholder="Enter last 4 digits of SSN"
+                        placeholder="Enter last 4 digits of SIN"
                         maxLength={4}
                         className="pl-10 w-full px-4 py-2.5 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors"
                         required
@@ -650,7 +662,7 @@ const ApplicationForm = () => {
                   />
                 </div>
                 <label htmlFor="adult" className="ml-3 text-sm text-gray-600">
-                  I confirm that I am at least 18 years old and legally able to enter into contracts.
+                  I confirm that I am at least 18 years old, a Canadian resident, and legally able to enter into contracts in Canada.
                 </label>
               </div>
 

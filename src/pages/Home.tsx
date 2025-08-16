@@ -18,7 +18,7 @@ const Home = () => {
             <div className="text-center">
               <h1 className="text-5xl md:text-7xl font-bold mb-6 mx-auto max-w-4xl">Find Your Perfect Loan Match</h1>
               <p className="text-xl md:text-2xl mb-8 text-emerald-100 max-w-2xl mx-auto">
-                Connect with lenders through our advanced lead generation service. One application, multiple loan options.
+                Connect with Canadian lenders through our advanced lead generation service. One application, multiple loan options across Canada.
               </p>
               <Link
                 to="/apply"
@@ -50,7 +50,7 @@ const Home = () => {
                 <Users className="h-16 w-16 mb-6" />
               </div>
               <h3 className="text-2xl font-bold mb-4">Lead Generation Network</h3>
-              <p className="text-lg text-emerald-100">Access to a verified network of personal loan leads generated through our website.</p>
+              <p className="text-lg text-emerald-100">Access to a verified network of Canadian personal loan leads generated through our website.</p>
             </div>
 
             <div className="card-3d bg-white/10 backdrop-blur-md p-8 rounded-xl text-white border border-white/10">
@@ -106,19 +106,19 @@ const Home = () => {
       <div className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-            <div>
+                    description: "Fill out one simple online form for Canadian lenders"
               <h2 className="text-4xl font-bold mb-8">
                 <span className="text-emerald-600">Why Use Our Service?</span>
               </h2>
               <p className="text-xl text-gray-600 mb-8">
                 As a specialized lead generation service, we help you:
-              </p>
+                    description: "Get connected with potential Canadian lenders"
               <ul className="space-y-6">
                 {[
                   "Save time with one simple application",
                   "Access multiple loan options",
                   "Compare offers easily",
-                  "Get Connect quickly",
+                    description: "Review and choose your best Canadian loan option"
                   "Review and Accept "
                 ].map((item, index) => (
                   <li key={index} className="flex items-center text-lg">

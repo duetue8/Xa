@@ -17,7 +17,7 @@ const PersonalLoans = () => {
                   <h2 className="text-lg font-semibold text-orange-700">Important Notice</h2>
                   <p className="text-orange-600">
                     Quickeloan is exclusively a lead generation service. We do not provide loans, make lending decisions, or guarantee lead conversions. Our role is to connect lenders with potential leads they may purchase. All transactions and agreements are between the lenders and the leads they choose to contact.
-                  </p>
+                  <p className="text-xl">Borrow CAD $1,000 - $50,000</p>
                 </div>
               </div>
             </div>
@@ -79,11 +79,12 @@ const PersonalLoans = () => {
 
             <div className="bg-gray-100 p-6 rounded-lg">
               <h3 className="text-xl font-bold mb-4 text-red-600">Disclaimer</h3>
-              <p className="text-gray-700 mb-4">Quick eLoans is a loan matching service that:</p>
+              <p className="text-gray-700 mb-4">Quick eLoans Canada is a loan matching service that:</p>
               <ul className="list-disc list-inside space-y-2 text-gray-700">
                 <li>Does NOT provide loans directly</li>
                 <li>Cannot guarantee loan approval</li>
-                <li>Is not responsible for lending decisions</li>
+                <li>Is not responsible for lending decisions by Canadian lenders</li>
+                <li>Operates in compliance with Canadian financial regulations</li>
               </ul>
               <div className="mt-6 text-center">
                 <Link

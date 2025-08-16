@@ -19,7 +19,7 @@ const BusinessLoans = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-emerald-600/80 to-blue-600/80 flex items-center justify-center">
                 <div className="text-white text-center p-8">
                   <h2 className="text-3xl font-bold mb-4">Grow Your Business</h2>
-                  <p className="text-xl">Business Loans up to $50,000</p>
+                  <p className="text-xl">Canadian Business Loans up to CAD $100,000</p>
                 </div>
               </div>
             </div>
