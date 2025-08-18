@@ -295,7 +295,7 @@ const ApplicationForm = () => {
     <div className="flex-grow bg-gradient-to-b from-gray-50 to-gray-100 py-12 px-4 sm:px-6 lg:px-8">
       <Toaster position="top-right" />
       <ApplicationModal
-        {typeof window !== 'undefined' && !window.location.hash.includes('/admin') && <Navbar />}
+        isOpen={showModal}
         onClose={handleCloseModal}
         type={modalType}
       />
