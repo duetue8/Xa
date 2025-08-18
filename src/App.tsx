@@ -299,6 +299,7 @@ const ApplicationForm = () => {
         onClose={handleCloseModal}
         type={modalType}
       />
+      {typeof window !== 'undefined' && !window.location.hash.includes('/admin') && <Navbar />}
       <div className="max-w-4xl mx-auto">
         <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
           {/* Hero Section */}
@@ -716,7 +717,7 @@ const ApplicationForm = () => {
                     type="checkbox"
                     id="acknowledge"
                     checked={isAcknowledged}
-                    onChange={(e) =>setIsAcknowledged(e.target.checked)}
+                    onChange={(e) => setIsAcknowledged(e.target.checked)}
                     className="h-4 w-4 text-emerald-600 focus:ring-emerald-500 border-gray-300 rounded transition-colors"
                   />
                 </div>
@@ -758,8 +759,8 @@ const ApplicationForm = () => {
             </div>
           </form>
         </div>
+        {typeof window !== 'undefined' && !window.location.hash.includes('/admin') && <Footer />}
       </div>
-      {typeof window !== 'undefined' && !window.location.hash.includes('/admin') && <Footer />}
     </div>
   );
 };
