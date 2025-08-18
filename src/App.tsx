@@ -757,8 +757,9 @@ const ApplicationForm = () => {
               </div>
             </div>
           </form>
-        {typeof window !== 'undefined' && !window.location.hash.includes('/admin') && <Footer />}
+        </div>
       </div>
+      {typeof window !== 'undefined' && !window.location.hash.includes('/admin') && <Footer />}
     </div>
   );
 };
