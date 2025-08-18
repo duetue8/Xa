@@ -21,6 +21,9 @@ const supabaseKey = import.meta.env.VITE_SUPABASE_ANON_KEY || 'placeholder-key';
 
 const supabase = createClient(supabaseUrl, supabaseKey, {
   auth: {
+    persistSession: false
+  }
+});
 
 const ApplicationForm = () => {
   const [formData, setFormData] = useState<ApplicationFormData>({
