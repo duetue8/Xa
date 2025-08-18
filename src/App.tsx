@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { toast, Toaster } from 'react-hot-toast';
 import { ClipboardList, Shield, DollarSign, Users, CheckCircle, Clock, MapPin } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { applicationSchema, formatPhoneNumber, isValidEmail, isValidPhone, isValidZip } from './utils/validation';
+import { applicationSchema, formatPhoneNumber, isValidEmail, isValidPhone, isValidZip } from '../utils/validation';
 import type { ApplicationFormData } from '../utils/validation';
 import emailjs from '@emailjs/browser';
 import { createClient } from '@supabase/supabase-js';
@@ -299,7 +299,6 @@ const ApplicationForm = () => {
         onClose={handleCloseModal}
         type={modalType}
       />
-      {typeof window !== 'undefined' && !window.location.hash.includes('/admin') && <Navbar />}
       <div className="max-w-4xl mx-auto">
         <div className="bg-white rounded-2xl shadow-xl overflow-hidden">
           {/* Hero Section */}
