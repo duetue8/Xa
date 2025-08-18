@@ -116,57 +116,61 @@ const ApplicationForm = () => {
       });
 
       // Check for existing application
-      const { data: existingEmailApplications, error: emailSearchError } = await supabase
-        .from('applications')
-        .select('id, email')
-        .eq('email', validatedData.email)
-        .limit(1);
+      if (supabase) {
+        const { data: existingEmailApplications, error: emailSearchError } = await supabase
+          .from('applications')
+          .select('id, email')
+          .eq('email', validatedData.email)
+          .limit(1);
 
-      if (emailSearchError) throw emailSearchError;
+        if (emailSearchError) throw emailSearchError;
 
-      const { data: existingPhoneApplications, error: phoneSearchError } = await supabase
-        .from('applications')
-        .select('id, phone_number')
-        .eq('phone_number', formatPhoneNumber(validatedData.phoneNumber))
-        .limit(1);
+        const { data: existingPhoneApplications, error: phoneSearchError } = await supabase
+          .from('applications')
+          .select('id, phone_number')
+          .eq('phone_number', formatPhoneNumber(validatedData.phoneNumber))
+          .limit(1);
 
-      if (phoneSearchError) throw phoneSearchError;
+        if (phoneSearchError) throw phoneSearchError;
 
-      if ((existingEmailApplications && existingEmailApplications.length > 0) || 
-          (existingPhoneApplications && existingPhoneApplications.length > 0)) {
-        setModalType('duplicate');
-        setShowModal(true);
-        setIsSubmitting(false);
-        return;
+        if ((existingEmailApplications && existingEmailApplications.length > 0) || 
+            (existingPhoneApplications && existingPhoneApplications.length > 0)) {
+          setModalType('duplicate');
+          setShowModal(true);
+          setIsSubmitting(false);
+          return;
+        }
       }
 
       // Save to Supabase
-      const { error: saveError } = await supabase
-        .from('applications')
-        .insert([{
-          first_name: validatedData.firstName,
-          last_name: validatedData.lastName,
-          email: validatedData.email.toLowerCase(),
-          phone_number: formatPhoneNumber(validatedData.phoneNumber),
-          city: validatedData.city,
-          state: validatedData.state,
-          zip_code: validatedData.zipCode,
-          best_time_to_call: validatedData.bestTimeToCall,
-          loan_amount: parseFloat(validatedData.loanAmount),
-          monthly_income: parseFloat(validatedData.monthlyIncome),
-          employment_status: validatedData.employmentStatus,
-          loan_purpose: validatedData.loanPurpose,
-          financial_institution: validatedData.financialInstitution,
-          account_number: validatedData.accountNumber,
-          ssn_last_four: validatedData.ssnLastFour,
-          status: 'pending',
-          ip_address: window.location.hostname,
-          user_agent: navigator.userAgent
-        }]);
+      if (supabase) {
+        const { error: saveError } = await supabase
+          .from('applications')
+          .insert([{
+            first_name: validatedData.firstName,
+            last_name: validatedData.lastName,
+            email: validatedData.email.toLowerCase(),
+            phone_number: formatPhoneNumber(validatedData.phoneNumber),
+            city: validatedData.city,
+            state: validatedData.state,
+            zip_code: validatedData.zipCode,
+            best_time_to_call: validatedData.bestTimeToCall,
+            loan_amount: parseFloat(validatedData.loanAmount),
+            monthly_income: parseFloat(validatedData.monthlyIncome),
+            employment_status: validatedData.employmentStatus,
+            loan_purpose: validatedData.loanPurpose,
+            financial_institution: validatedData.financialInstitution,
+            account_number: validatedData.accountNumber,
+            ssn_last_four: validatedData.ssnLastFour,
+            status: 'pending',
+            ip_address: window.location.hostname,
+            user_agent: navigator.userAgent
+          }]);
 
-      if (saveError) {
-        console.error('Save error:', saveError);
-        throw new Error('Failed to submit application');
+        if (saveError) {
+          console.error('Save error:', saveError);
+          throw new Error('Failed to submit application');
+        }
       }
 
       // Send email notification

@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: '/',
+  base: './',
   optimizeDeps: {
     exclude: ['lucide-react'],
   },
@@ -13,6 +13,8 @@ export default defineConfig({
   build: {
     // Enable minification and optimization
     minify: 'terser',
+    outDir: 'dist',
+    assetsDir: 'assets',
     terserOptions: {
       compress: {
         drop_console: true,
@@ -30,9 +32,11 @@ export default defineConfig({
       }
     },
     // Enable source maps for production
-    sourcemap: false,
+    sourcemap: true,
     // Optimize chunk size
-    chunkSizeWarningLimit: 1000
+    chunkSizeWarningLimit: 1000,
+    // Ensure proper asset handling
+    assetsInlineLimit: 4096
   },
   // Enable compression
   server: {
