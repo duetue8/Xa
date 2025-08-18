@@ -3,8 +3,12 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
+  base: '/',
   optimizeDeps: {
     exclude: ['lucide-react'],
+  },
+  define: {
+    global: 'globalThis',
   },
   build: {
     // Enable minification and optimization
@@ -26,12 +30,18 @@ export default defineConfig({
       }
     },
     // Enable source maps for production
-    sourcemap: true,
+    sourcemap: false,
     // Optimize chunk size
     chunkSizeWarningLimit: 1000
   },
   // Enable compression
   server: {
-    compression: true
+    compression: true,
+    host: true,
+    port: 5173
+  },
+  preview: {
+    port: 4173,
+    host: true
   }
 });
