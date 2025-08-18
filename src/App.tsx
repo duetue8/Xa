@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { toast, Toaster } from 'react-hot-toast';
 import { ClipboardList, Shield, DollarSign, Users, CheckCircle, Clock, MapPin } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { applicationSchema, formatPhoneNumber, isValidEmail, isValidPhone, isValidZip } from '../utils/validation';
+import { applicationSchema, formatPhoneNumber, isValidEmail, isValidPhone, isValidZip } from './utils/validation';
 import type { ApplicationFormData } from '../utils/validation';
 import emailjs from '@emailjs/browser';
 import { createClient } from '@supabase/supabase-js';
