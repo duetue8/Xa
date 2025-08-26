@@ -12,7 +12,7 @@
     <!-- Preload critical assets -->
     <link rel="preload" as="image" href="./favicon.svg" />
     <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17271013827"></script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17494346933"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
@@ -41,11 +41,16 @@
         return gtag_report_conversion(url);
       };
 
+      // Event snippet for Submit lead form (1) conversion page
+      gtag('event', 'conversion', {
+          'send_to': 'AW-17494346933/TI-KCLjCjo4bELWZ-pVB'
+      });
+
       // Event snippet for Submit lead form conversion page
       gtag('event', 'conversion', {
-          'send_to': 'AW-17494346933/yJq_CKiSjI4bELWZ-pVB',
+          'send_to': 'AW-17271013827/AjjqCJf-r4kbEMODu6tA',
           'value': 1.0,
-          'currency': 'INR'
+          'currency': 'USD'
       });
     </script>
     <script type="module" crossorigin src="/assets/index-C6YxGYZA.js"></script>
